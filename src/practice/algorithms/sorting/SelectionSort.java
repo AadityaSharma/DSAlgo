@@ -13,6 +13,7 @@ import java.util.Arrays;
  * input array, it's an in-place algorithm.
  *
  * O(n2) time complexity - quadratic
+ * It's  stable algorithm
  *
  * It'll take:
  *  -- 100 steps to sort 10 items,
