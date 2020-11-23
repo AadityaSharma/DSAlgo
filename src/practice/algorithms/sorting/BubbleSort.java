@@ -2,6 +2,8 @@ package practice.algorithms.sorting;
 
 import java.util.Arrays;
 
+import practice.algorithms.utils.AlgoUtils;
+
 /**
  * Bubble Sort Algo
  *
@@ -112,20 +114,10 @@ public class BubbleSort {
         while (maxLen > 0) {
             for (int i = 1; i < maxLen; i++) {
                 if (arr[i] < arr[i - 1]) {
-                    swap(arr, i, i - 1);
+                    AlgoUtils.swapInArr(arr, i, i - 1);
                 }
             }
             maxLen--;
         }
-    }
-
-    private static void swap(int[] arr, int i, int j) {
-        if (i == j || arr[i] == arr[j]) {
-            return;
-        }
-
-        arr[i] = arr[i] + arr[j];
-        arr[j] = arr[i] - arr[j];
-        arr[i] = arr[i] - arr[j];
     }
 }
