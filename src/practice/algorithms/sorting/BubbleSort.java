@@ -17,6 +17,8 @@ import java.util.Arrays;
  *
  * So, we can say that, this algorithm degrades quickly.
  * Hence, should avoid using it (specially when the array size could be large)
+ *
+ * @author  Aaditya Sharma
  */
 
 public class BubbleSort {
