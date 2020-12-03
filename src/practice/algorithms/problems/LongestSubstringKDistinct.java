@@ -10,6 +10,8 @@ public class LongestSubstringKDistinct {
         if (str == null || str.length() == 0 || str.length() < k)
             throw new IllegalArgumentException();
 
+        int x = str.charAt(0);
+
         int windowStart = 0, maxLength = 0;
         Map<Character, Integer> charFrequencyMap = new HashMap<>();
 
